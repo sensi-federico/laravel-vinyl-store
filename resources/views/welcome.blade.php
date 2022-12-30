@@ -16,7 +16,7 @@
                             <h5 class="card-title">{{$vinyl['title']}}</h5>
                             <h6 class="card-subtitle text-muted mb-2">{{$vinyl['artist']}}</h6>
                             <p class="text-muted m-0">{{$vinyl['genre']}}</p>
-                            <p class="text-muted m-0">{{$vinyl['duration']}}</p>
+                            <p class="text-muted m-0">{{$vinyl['duration']}} min</p>
                         </div>
                     </div>
                 </div>

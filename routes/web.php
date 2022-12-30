@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VinylController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,5 @@ Route::get('/', function () {
 
     return view('welcome', compact('vinyls'));
 });
+
+Route::resource('admin/vinyls', VinylController::class);

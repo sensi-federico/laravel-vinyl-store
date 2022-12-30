@@ -15,7 +15,8 @@ class VinylController extends Controller
      */
     public function index()
     {
-        //
+        $vinyls = Vinyl::all();
+        return view('admin.vinyls.index', compact('vinyls'));
     }
 
     /**

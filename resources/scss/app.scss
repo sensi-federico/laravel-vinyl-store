@@ -10,3 +10,15 @@ header {
         font-size: 30px;
     }
 }
+
+main {
+    .card {
+        transition: all .4s ease 0s;
+
+        &:hover {
+            scale: 1.02;
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+    }
+}
