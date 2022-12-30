@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $vinyls = config('vinyl-db.vinyls');
+
+    return view('welcome', compact('vinyls'));
 });

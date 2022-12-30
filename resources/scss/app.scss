@@ -1,1 +1,12 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+
+header {
+    .jumbo {
+        background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F646112.jpg&f=1&nofb=1&ipt=e9e7098294a773bc965359895f05d670db79cd3215f79f093fdb8af786f7153f&ipo=images');
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+}

@@ -68,7 +68,7 @@ return [
             'language' => 'en'
         ],
         [
-            'title' => "Come over when you're sober",
+            'title' => "Come over",
             'artist' => 'Lil peep',
             'cover' => 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-2nCs3-8-ijo%2FW-RxLE_RNRI%2FAAAAAAAAJ8o%2F6fXGNDYqOIkRNnbcSoi-gNHbDYJl4yd2wCLcBGAs%2Fs1600%2Flil-peep-come-over-when-youre-sober-pt-2.jpg&f=1&nofb=1&ipt=22bd25dae57bc39b1201870779832266e71c13973fff2cce3b743905ec607f64&ipo=images',
             'duration' => '51:45',
