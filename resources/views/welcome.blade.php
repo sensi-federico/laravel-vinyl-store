@@ -2,6 +2,19 @@
 
 @section('content')
 
+<div class="p-5 mb-4 jumbo">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Tutti i migliori vinili!</h1>
+        <p class="col-md-8 fs-4">
+            Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Pariatur qui aliquid consectetur atque
+            soluta rem vero laboriosam nulla ex ullam sint, aliquam nihil neque eius
+            similique eaque sapiente ut eligendi.
+        </p>
+        <button class="btn btn-danger btn-lg" type="button">Example button</button>
+    </div>
+</div>
+
 <div class="container text-center">
     <div class="row row-cols-3">
         @foreach($vinyls as $vinyl)

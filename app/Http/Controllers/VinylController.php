@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreVinylRequest;
-use App\Http\Requests\UpdateVinylRequest;
-use App\Models\Vinyl;
+use App\Http\Requests\StorevinylRequest;
+use App\Http\Requests\UpdatevinylRequest;
+use App\Models\vinyl;
 
-class VinylController extends Controller
+class vinylController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class VinylController extends Controller
      */
     public function index()
     {
-        $vinyls = Vinyl::all();
+        $vinyls = vinyl::all();
         return view('admin.vinyls.index', compact('vinyls'));
     }
 
@@ -32,10 +32,10 @@ class VinylController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreVinylRequest  $request
+     * @param  \App\Http\Requests\StorevinylRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreVinylRequest $request)
+    public function store(StorevinylRequest $request)
     {
         //
     }
@@ -43,10 +43,10 @@ class VinylController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Vinyl  $vinyl
+     * @param  \App\Models\vinyl  $vinyl
      * @return \Illuminate\Http\Response
      */
-    public function show(Vinyl $vinyl)
+    public function show(vinyl $vinyl)
     {
         //
     }
@@ -54,10 +54,10 @@ class VinylController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Vinyl  $vinyl
+     * @param  \App\Models\vinyl  $vinyl
      * @return \Illuminate\Http\Response
      */
-    public function edit(Vinyl $vinyl)
+    public function edit(vinyl $vinyl)
     {
         //
     }
@@ -65,11 +65,11 @@ class VinylController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateVinylRequest  $request
-     * @param  \App\Models\Vinyl  $vinyl
+     * @param  \App\Http\Requests\UpdatevinylRequest  $request
+     * @param  \App\Models\vinyl  $vinyl
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateVinylRequest $request, Vinyl $vinyl)
+    public function update(UpdatevinylRequest $request, vinyl $vinyl)
     {
         //
     }
@@ -77,10 +77,10 @@ class VinylController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Vinyl  $vinyl
+     * @param  \App\Models\vinyl  $vinyl
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Vinyl $vinyl)
+    public function destroy(vinyl $vinyl)
     {
         //
     }

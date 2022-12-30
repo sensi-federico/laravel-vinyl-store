@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Vinyl;
+use App\Models\vinyl;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class VinylSeeder extends Seeder
+class vinylSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,7 +17,7 @@ class VinylSeeder extends Seeder
     {
         $vinyls = config('vinyl-db.vinyls');
         foreach ($vinyls as $vinyl) {
-            $vinile = new Vinyl();
+            $vinile = new vinyl();
             $vinile->title = $vinyl['title'];
             $vinile->artist = $vinyl['artist'];
             $vinile->cover = $vinyl['cover'];
