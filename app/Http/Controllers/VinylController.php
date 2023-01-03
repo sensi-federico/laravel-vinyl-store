@@ -67,7 +67,8 @@ class VinylController extends Controller
      */
     public function edit(Vinyl $vinyl)
     {
-        //
+
+        return view('admin.vinyls.edit', compact('vinyl'));
     }
 
     /**
@@ -79,7 +80,6 @@ class VinylController extends Controller
      */
     public function update(UpdateVinylRequest $request, Vinyl $vinyl)
     {
-        //
     }
 
     /**
