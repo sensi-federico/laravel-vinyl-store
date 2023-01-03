@@ -8,7 +8,7 @@
         <div class="heading d-flex justify-content-between">
             <h2>vinyls</h2>
             <div>
-                <a href="#" class="btn btn-danger">Add vinyl</a>
+                <a href="{{route('vinyls.create')}}" class="btn btn-danger">Add vinyl</a>
             </div>
         </div>
 

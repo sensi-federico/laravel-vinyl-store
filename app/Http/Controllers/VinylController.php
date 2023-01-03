@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorevinylRequest;
-use App\Http\Requests\UpdatevinylRequest;
-use App\Models\vinyl;
+use App\Http\Requests\StoreVinylRequest;
+use App\Http\Requests\UpdateVinylRequest;
+use App\Models\Vinyl;
 
-class vinylController extends Controller
+class VinylController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class vinylController extends Controller
      */
     public function index()
     {
-        $vinyls = vinyl::all();
+        $vinyls = Vinyl::all();
         return view('admin.vinyls.index', compact('vinyls'));
     }
 
@@ -26,27 +26,35 @@ class vinylController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.vinyls.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorevinylRequest  $request
+     * @param  \App\Http\Requests\StoreVinylRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorevinylRequest $request)
+    public function store(StoreVinylRequest $request)
     {
-        //
+        $newVinyl = new Vinyl();
+        $newVinyl->title = $request['title'];
+        $newVinyl->artist = $request['artist'];
+        $newVinyl->cover = $request['cover'];
+        $newVinyl->duration = $request['duration'];
+        $newVinyl->genre = $request['genre'];
+        $newVinyl->language = $request['language'];
+        $newVinyl->save();
+        return to_route('vinyls.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\vinyl  $vinyl
+     * @param  \App\Models\Vinyl  $vinyl
      * @return \Illuminate\Http\Response
      */
-    public function show(vinyl $vinyl)
+    public function show(Vinyl $vinyl)
     {
         //
     }
@@ -54,10 +62,10 @@ class vinylController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\vinyl  $vinyl
+     * @param  \App\Models\Vinyl  $vinyl
      * @return \Illuminate\Http\Response
      */
-    public function edit(vinyl $vinyl)
+    public function edit(Vinyl $vinyl)
     {
         //
     }
@@ -65,11 +73,11 @@ class vinylController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatevinylRequest  $request
-     * @param  \App\Models\vinyl  $vinyl
+     * @param  \App\Http\Requests\UpdateVinylRequest  $request
+     * @param  \App\Models\Vinyl  $vinyl
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatevinylRequest $request, vinyl $vinyl)
+    public function update(UpdateVinylRequest $request, Vinyl $vinyl)
     {
         //
     }
@@ -77,10 +85,10 @@ class vinylController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\vinyl  $vinyl
+     * @param  \App\Models\Vinyl  $vinyl
      * @return \Illuminate\Http\Response
      */
-    public function destroy(vinyl $vinyl)
+    public function destroy(Vinyl $vinyl)
     {
         //
     }

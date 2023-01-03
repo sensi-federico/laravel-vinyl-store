@@ -21,4 +21,24 @@ main {
             cursor: pointer;
         }
     }
+
+    .form-create {
+        form {
+            width: 900px;
+
+            input {
+                margin-top: 1rem;
+                padding: 1rem;
+            }
+
+            label {
+                margin-top: 1rem;
+            }
+
+            button {
+                width: 200px;
+                margin-top: 1rem;
+            }
+        }
+    }
 }
