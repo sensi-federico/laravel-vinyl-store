@@ -56,7 +56,7 @@ class VinylController extends Controller
      */
     public function show(Vinyl $vinyl)
     {
-        //
+        return view('admin.vinyls.show', compact('vinyl'));
     }
 
     /**
@@ -94,7 +94,7 @@ class VinylController extends Controller
 
         $vinyl->update($data);
 
-        return to_route('vinyls.index');
+        return to_route('vinyls.index')->with('message', "$vinyl->title update successfully");
     }
 
     /**

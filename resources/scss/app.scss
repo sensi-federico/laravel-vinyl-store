@@ -8,8 +8,30 @@ header {
 }
 
 main {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.zastavki.com%2Fpictures%2F2560x1600%2F2009%2F3D-graphics_Gray_Texture_016438_.jpg&f=1&nofb=1&ipt=1dcfe28ab190f18bbb86eac75883e7c78eb31d3d08cf1ace1a815a64320dc7c5&ipo=images');
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
     .jumbo {
         background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F646112.jpg&f=1&nofb=1&ipt=e9e7098294a773bc965359895f05d670db79cd3215f79f093fdb8af786f7153f&ipo=images');
+
+
+        .cover {
+            position: relative;
+            top: 10rem;
+        }
+    }
+
+    .info {
+        padding-top: 5rem;
+
+        .info-content {
+            padding: 5rem;
+            color: white;
+        }
     }
 
     .card {
