@@ -13,6 +13,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">vinyls</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('admin')}}">admin</a>
+                    </li>
                 </ul>
             </div>
         </div>

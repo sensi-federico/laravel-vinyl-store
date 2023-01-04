@@ -80,6 +80,21 @@ class VinylController extends Controller
      */
     public function update(UpdateVinylRequest $request, Vinyl $vinyl)
     {
+
+        // dd($request->all(), $vinyl);
+
+        $data = [
+            'title' => $request['title'],
+            'artist' => $request['artist'],
+            'cover' => $request['cover'],
+            'duration' => $request['duration'],
+            'genre' => $request['genre'],
+            'language' => $request['language']
+        ];
+
+        $vinyl->update($data);
+
+        return to_route('vinyls.index');
     }
 
     /**

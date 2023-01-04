@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Vinyl extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['title', 'artist', 'cover', 'duration', 'genre', 'language'];
 }

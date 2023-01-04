@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VinylController;
+use App\Models\Vinyl;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,17 @@ use App\Http\Controllers\VinylController;
 Route::get('/', function () {
 
     $vinyls = config('vinyl-db.vinyls');
-
     return view('welcome', compact('vinyls'));
 })->name('home');
+
+
+
+Route::get('admin', function () {
+
+    $vinyls = Vinyl::all();
+    return view('admin.vinyls.index', compact('vinyls'));
+})->name('admin');
+
+
 
 Route::resource('admin/vinyls', VinylController::class);
