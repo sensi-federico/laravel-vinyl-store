@@ -35,8 +35,9 @@
     </div>
     <div class="track-list">
         <ol class="text-white">
+            <h3 class="fw-bold">Track List</h3>
             @for($i = 0; $i < 10; $i++) <li>
-                <h6>Lorem ipsum</h6>
+                <h6 class="text-center">Lorem ipsum</h6>
                 </li>
                 @endfor
         </ol>

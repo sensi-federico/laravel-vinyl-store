@@ -94,7 +94,7 @@ class VinylController extends Controller
 
         $vinyl->update($data);
 
-        return to_route('vinyls.index')->with('message', "$vinyl->title update successfully");
+        return to_route('vinyls.index')->with('message', "$vinyl->title updated successfully");
     }
 
     /**
@@ -105,6 +105,8 @@ class VinylController extends Controller
      */
     public function destroy(Vinyl $vinyl)
     {
-        //
+        $vinyl->delete();
+
+        return to_route('vinyls.index')->with('message', "$vinyl->title deleted successfully");
     }
 }

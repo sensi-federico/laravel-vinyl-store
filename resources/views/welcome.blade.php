@@ -20,10 +20,10 @@
         @foreach($vinyls as $vinyl)
         <div class="col text-start">
             <a href="{{route('vinyls.show', $vinyl->id)}}">
-                <div class="card mb-3" style="max-width: 540px;">
+                <div class="card mb-3" style="max-width: 600px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{$vinyl['cover']}}" class="img-fluid rounded-start" alt="Card title">
+                            <img src="{{$vinyl['cover']}}" class="image rounded-start" alt="Card title">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
